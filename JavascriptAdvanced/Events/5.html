@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Magic</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+            background-color: #f4f4f5;
+            border-bottom: 1px solid #d4d4d8;
+        }
+        .navbar button {
+            padding: 4px 16px;
+            border: 1px solid #a1a1aa;
+            background-color: #ffffff;
+            border-radius: 2px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .display-area {
+            flex: 1;
+            background-color: #18181b;
+            color: #e4e4e7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <button>Home</button>
+        <button>Youtube channel</button>
+    </div>
+    <div class="display-area" id="insert">
+        <p>Press the key and watch magic</p>
+    </div>
+    <script src="abc2.js"></script>
+</body>
+</html>
