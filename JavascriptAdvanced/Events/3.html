@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur JS</title>
+</head>
+<body>
+    <h1>Chai aur javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+    <script>
+        // 1. Declare intervalId globally with 'let' so both buttons can access it
+        let intervalId; 
+
+        const date = function(str) {
+            console.log(str, Date.now());
+        }
+
+        // 2. START BUTTON LOGIC
+        document.querySelector("#start").addEventListener('click', function(){
+            // The if-statement prevents a bug where clicking "Start" 5 times creates 5 separate, unstoppable intervals
+            if (!intervalId) {
+                intervalId = setInterval(date, 1000, "abd");
+                console.log("Interval started!");
+            }
+        });
+
+        // 3. STOP BUTTON LOGIC
+        document.querySelector("#stop").addEventListener('click', function(){
+            clearInterval(intervalId);
+            intervalId = null; // Reset the ID so the start button knows it's allowed to run again
+            console.log("Interval cleared!");
+        });
+    </script>
+</body>
+</html>

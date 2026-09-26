@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+</head>
+
+    
+<body style="background-color:#212121;color:white">
+
+
+    
+</body>
+<script>
+  div=document.createElement('div')
+  console.log(div)
+  div.className="main"
+  div.id=Math.random()*10+1;
+  div.setAttribute("title","gen-title")
+  //div.innerText="Chai or code"//overwrites values set attribute directly does it
+  const addText=document.createTextNode("Chai OR CODE")
+  div.appendChild(addText)
+  document.body.appendChild(div)
+</script>
+</html>
