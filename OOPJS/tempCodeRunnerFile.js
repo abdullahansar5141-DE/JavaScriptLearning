@@ -1,2 +1,1 @@
-user.getUserDetails();
-// console.log(this)
+abd.createId()
